@@ -1,0 +1,20 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+class Print: 
+    def getString(self, str):
+        self.str=str
+        
+        
+    def printString(self):
+        print(self.str)
+      
+        
+pr = Print()
+
+x = input()
+
+pr.getString(x)
+
+pr.printString()
+    
