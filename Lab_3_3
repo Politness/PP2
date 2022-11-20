@@ -1,0 +1,43 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+class Shape:
+    def __init__(self, length):
+        self.length=length
+    
+    def __init__(self,length,width): 
+        self.length=length
+        self.width=width
+        
+    def area (self):
+        return 0
+        
+class Square (Shape):
+        
+    def __init__(self,length):
+        super().__init__(length)
+        
+    def area (self):
+        return self.length * self.length
+
+class Rectangle (Shape):
+    def __init__(self,length,width): 
+        super().__init__(length,width)
+        
+    def area (self):
+        return self.length * self.width
+
+# x = int(input())
+
+# sq = Square(x)
+
+# print(sq.area()) 
+
+x = int(input())
+y = int(input())
+
+req = Rectangle(x,y)
+
+print(req.area())
+    
+        
+                
