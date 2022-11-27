@@ -1,0 +1,4 @@
+x = int(input("Print any number to print reverse generator :"))
+squares = (x - num for num in range(x+1))
+for num in squares:
+    print(num)
