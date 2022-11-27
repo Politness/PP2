@@ -1,0 +1,5 @@
+degrees = float(input("Input degrees: "))
+pi = 3.142
+
+radians = degrees * pi / 180
+print(radians)
