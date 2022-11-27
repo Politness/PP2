@@ -1,5 +1,4 @@
-x = int(input("Print any number to find square (even):"))
-
-for i in range(x+1):
-    if( i%2 == 0):
-        print(i*i)
+x = int(input())
+generator = (num * 2 for num in range(x+1))
+for num in generator:
+    print(num)
