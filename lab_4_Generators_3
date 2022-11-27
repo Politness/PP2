@@ -1,5 +1,5 @@
 x = int(input("Print any number to find divisible by 3 and 4 :"))
-
-for i in range(x+1):
-    if( i%3 == 0 and i%4 == 0):
-        print(i)
+generator = (num for num in range(x+1))
+for num in generator:
+    if(num % 12 == 0):
+        print(num)
