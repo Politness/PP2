@@ -1,0 +1,14 @@
+import re
+from pathlib import Path
+
+def check(text):
+        isFound = '[A-Z]+[a-z]'
+        if re.search(isFound,  text):
+                return 'Text are matched!'
+        else:
+                return 'Text are not matched!'
+            
+x = input("Input something:")
+
+print(check(x))
+
