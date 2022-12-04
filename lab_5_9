@@ -1,0 +1,11 @@
+import re
+from pathlib import Path
+
+def check(word):
+    match  = re.sub(r"(\w)([A-Z])", r"\1 \2", word)
+    return match
+
+
+x = str(input("Input something:"))
+
+print(check(x))
