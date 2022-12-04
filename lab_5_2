@@ -1,0 +1,16 @@
+import re
+from pathlib import Path
+
+def check(text):
+        isFound = 'abb'
+        isFound2 = 'abbb'
+        if re.search(isFound2,  text):
+                return 'Text are matched!'
+        else:
+                if re.search(isFound, text):
+                    return 'Text are matched!'
+                return 'Text are not matched!'
+            
+x = input("Input something:")
+
+print(check(x))
