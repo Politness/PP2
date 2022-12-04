@@ -1,0 +1,9 @@
+import re
+
+def check(word):
+    match = re.findall('[A-Z][^A-Z]*', word)
+    return(match)
+
+x = str(input("Input something:"))
+
+print(check(x))
